@@ -88,8 +88,6 @@ class CacheItemPool implements CacheItemPoolInterface
 
     public function deleteItems(array $keys): bool
     {
-
-
         foreach($keys as $key) {
             $this->deleteItem($key);
         }

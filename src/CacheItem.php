@@ -50,7 +50,7 @@ class CacheItem implements CacheItemInterface
     {
         if ($this->isDeferred) {
             $this->deferredValue = $value;
-            return;
+            return $this;
         }
 
         $this->value = $value;
